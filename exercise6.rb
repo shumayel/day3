@@ -8,7 +8,8 @@ puts "*" + grocery_item
 end
 end
 
-asterik(grocery_list)
+asterik(grocery_list.sort)
+
 puts "This is the total number of items on the list: " + grocery_list.length.to_s
 
 if grocery_list == "banana"
@@ -16,3 +17,9 @@ if grocery_list == "banana"
 else
 	puts "YOU NEED BANANAS!"
 end
+
+puts "The second item on the list is: " + grocery_list[1]
+
+puts "There is no Truffles! Scratching it off your list."
+grocery_list.delete("truffles")
+asterik(grocery_list.sort)
