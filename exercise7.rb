@@ -4,13 +4,18 @@ students = {
 	:cohort3 => 22
 }
 
+students.delete(:cohort2)
 
 students[:cohort4] = 43
 
-students.keys
+# students.keys
 
-
-
+	cohort = 0
 students.each do |key, value|
-	puts "#{key}: #{value*1.05} students"
+	cohort += value
 end
+
+
+# students.each do |key, value|
+# 	puts "#{key}: #{value*1.05	} students"
+# end
